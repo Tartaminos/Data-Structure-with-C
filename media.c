@@ -20,7 +20,7 @@ int main(){
 
     media = (valor1 + valor2 + valor3) /3;
 
-    printf("A média de é %f", media);
+    printf("A média de é %.2f", media);
 
     return 0;
 }
