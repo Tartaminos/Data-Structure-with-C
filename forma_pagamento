@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+int main(void) {
+  int pagamento;
+  float preco, valor_final;
+  
+  printf("Preço do produto:");
+  scanf("%f", &preco);
+
+  printf("digite 1 para pagamento a vista \ndigite 2 para pagemento a prazo\n");
+  scanf("%d", &pagamento);
+
+  if(pagamento == 1){
+    valor_final = preco - (preco * 0.05);
+  } else {
+    valor_final = preco + (preco * 0.1);
+  }
+
+  printf("Valor final do produto: %.2f", valor_final);
+    
+  return 0;
+}
